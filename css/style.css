@@ -1,0 +1,16 @@
+/* external css*/
+/* using element name*/
+button {
+    background-color: brown;
+    color: black;
+    border-radius: 10px;
+}
+
+/* class ; all elements with same class will receive this styling */
+.paraClass {
+    text-decoration-line: overline underline;
+}
+#paraname {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: blue;
+}

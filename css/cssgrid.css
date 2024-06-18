@@ -1,0 +1,55 @@
+/* give the display property grid to container */
+.grid-container {
+  display: grid;
+  /* Define rows using '' */
+  /* define what grid */
+  grid-template-areas:
+    'navsection navsection navsection navsection navsection navsection'
+    'sidemenu1 sidemenu1 bannersection bannersection bannersection sidemenu2'
+    'maingallery maingallery maingallery maingallery maingallery maingallery'
+    'footersection footersection footersection footersection footersection footersection';
+}
+#navsection {
+  background-color: red;
+  grid-area: navsection;
+}
+#bannersection {
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1tictAyrZLs?si=bUk3-lf8rdgV-2p9">
+  grid-area: bannersection;
+}
+#maingallery {
+  background-color: green;
+  grid-area: maingallery;
+}
+#footersection {
+  background-color: yellow;
+  grid-area: footersection;
+}
+#sidemenu1 {
+  background-color: aqua;
+  grid-area: sidemenu1;
+}
+#sidemenu2 {
+  background-color: brown;
+  grid-area: sidemenu2;
+}
+/* when writing a media query position it at the very bottom of the css file  */
+@media only screen and (max-width: 600px)
+  body {
+      background-color: red;
+  }
+
+  /* display : property */
+.grid-container {
+  display: grid;
+  /* 1. define rows using '' */
+  /* 2. Define what grid area you want seen on the row */
+  grid-template-areas: 
+  'navsection navsection navsection navsection navsection navsection'
+  'sidemenu1 sidemenu1 sidemenu1 sidemenu1 sidemenu1 sidemenu1'
+  'bannersection bannersection bannersection bannersection bannersection bannersection'
+  'sidemenu2 sidemenu2 sidemenu2 sidemenu2 sidemenu2 sidemenu2'
+  'maingallery maingallery maingallery maingallery maingallery maingallery'
+  'footersection footersection footersection footersection footersection footersection'
+  ;
+}
